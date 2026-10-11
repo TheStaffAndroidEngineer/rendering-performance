@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:icon="@drawable/ic_common_goods" android:theme="@style/Theme.CommonGoods" android:label="Common Goods · Collection" android:allowBackup="false" android:supportsRtl="true">
+        <profileable android:shell="true" />
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" /></intent-filter>
+        </activity>
+        <activity android:name=".ViewsActivity" android:exported="false" />
+    </application>
+</manifest>

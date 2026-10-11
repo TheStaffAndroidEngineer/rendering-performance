@@ -1,0 +1,123 @@
+Calculating task graph as no cached configuration is available for tasks: :catalog:test :frame-lab:test :app:assembleDebug :app:assembleRelease :app:assembleDebugAndroidTest :benchmark:assembleBenchmark :app:lintDebug :app:lintRelease
+> Task :catalog:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :catalog:processResources NO-SOURCE
+> Task :catalog:processTestResources NO-SOURCE
+> Task :frame-lab:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :catalog:compileKotlin
+> Task :frame-lab:compileKotlin
+> Task :frame-lab:compileJava NO-SOURCE
+> Task :catalog:compileJava NO-SOURCE
+> Task :catalog:classes UP-TO-DATE
+> Task :frame-lab:processResources NO-SOURCE
+> Task :frame-lab:classes UP-TO-DATE
+> Task :catalog:jar
+> Task :frame-lab:jar
+> Task :catalog:compileTestKotlin
+> Task :catalog:compileTestJava NO-SOURCE
+> Task :catalog:testClasses UP-TO-DATE
+> Task :frame-lab:compileTestKotlin
+> Task :frame-lab:compileTestJava NO-SOURCE
+> Task :frame-lab:processTestResources NO-SOURCE
+> Task :frame-lab:testClasses UP-TO-DATE
+
+> Task :frame-lab:test
+
+FrameAccountingTest > earlyStartIsNotNegativeWaiting() PASSED
+
+FrameAccountingTest > longWorkAfterOnTimeStartCanMissDeadline() PASSED
+
+FrameAccountingTest > invalidUnmatchedRowsAreStillRejected() PASSED
+
+FrameAccountingTest > actualInputOrderDoesNotChangeMatching() PASSED
+
+FrameAccountingTest > duplicateKeysAreAmbiguousAndRejected() PASSED
+
+FrameAccountingTest > signedSlackAndElapsedAreDifferentValues() PASSED
+
+FrameAccountingTest > droppedBufferDoesNotInventPresentationOverrun() PASSED
+
+FrameAccountingTest > zeroMatchedPresentationsHaveNoPercentage() PASSED
+
+FrameAccountingTest > exactDeadlineIsOnTime() PASSED
+
+FrameAccountingTest > largeValidTimestampsDoNotOverflowByAddingADuration() PASSED
+
+FrameAccountingTest > denominatorIncludesOnlyMatchedPresentedObservations() PASSED
+
+FrameAccountingTest > unmatchedActualIsRetainedAfterExpectedOrder() PASSED
+
+FrameAccountingTest > lateStartCanMissDeadlineDespiteShortWork() PASSED
+
+FrameAccountingTest > missingEvidenceIsUnknownRatherThanFast() PASSED
+
+FrameAccountingTest > changedDeadlineUsesEachExpectedRecord() PASSED
+
+FrameAccountingTest > sameTokenOnDifferentSurfacesIsNotTheSameFrame() PASSED
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugResources
+
+> Task :catalog:test
+
+CatalogTest > ratingBelongsToItsProductAndEmptyReviewsRemainExplicit() PASSED
+
+CatalogTest > tiedPricesUseStableIdOrder() PASSED
+
+CatalogTest > priceSortChangesOrderWithoutChangingIdentityOrFields() PASSED
+
+CatalogTest > newSnapshotUpdatesPriceAndReviews() PASSED
+
+CatalogTest > repeatedPreparationPreservesEveryDisplayedField() PASSED
+
+CatalogTest > savedIdentitySurvivesReorderAndAnotherSelection() PASSED
+
+CatalogTest > emptyCatalogHasNoManufacturedRows() PASSED
+
+CatalogTest > snapshotOwnsItsInputAndReturnedListsCannotBeMutated() PASSED
+
+CatalogTest > invalidSnapshotIsRejectedAtBoundary() PASSED
+
+> Task :app:packageDebugResources
+> Task :app:processDebugNavigationResources
+> Task :app:javaPreCompileDebug
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:parseDebugLocalResources
+> Task :app:generateDebugRFile
+> Task :app:compressDebugAssets
+> Task :app:generateDebugGlobalSynthetics
+
+> Task :app:compileDebugKotlin FAILED
+e: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/app/src/main/kotlin/staff/android/rendering/CollectionScreen.kt:125:20 Unresolved reference 'onClick'.
+
+> Task :app:checkDebugDuplicateClasses
+
+[Incubating] Problems report is available at: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin' (registered by plugin 'com.android.internal.application').
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Kotlin compiler: UNRESOLVED_REFERENCE
+       Kotlin compiler error
+         Unresolved reference 'onClick'.
+         Location: /Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/app/src/main/kotlin/staff/android/rendering/CollectionScreen.kt:125
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 30s
+19 actionable tasks: 19 executed
+Configuration cache entry stored.

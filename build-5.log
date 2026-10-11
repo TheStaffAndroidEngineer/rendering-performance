@@ -1,0 +1,241 @@
+Calculating task graph as no cached configuration is available for tasks: :catalog:test :frame-lab:test :app:assembleDebug :app:assembleRelease :app:assembleDebugAndroidTest :app:lintDebug :app:lintRelease :benchmark:assembleBenchmark
+> Task :catalog:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :catalog:processResources NO-SOURCE
+> Task :catalog:processTestResources NO-SOURCE
+> Task :catalog:compileKotlin UP-TO-DATE
+> Task :frame-lab:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :catalog:compileJava NO-SOURCE
+> Task :catalog:classes UP-TO-DATE
+> Task :catalog:jar UP-TO-DATE
+> Task :frame-lab:compileKotlin UP-TO-DATE
+> Task :frame-lab:compileJava NO-SOURCE
+> Task :frame-lab:processResources NO-SOURCE
+> Task :frame-lab:classes UP-TO-DATE
+> Task :frame-lab:jar UP-TO-DATE
+> Task :frame-lab:compileTestKotlin UP-TO-DATE
+> Task :catalog:compileTestKotlin UP-TO-DATE
+> Task :frame-lab:compileTestJava NO-SOURCE
+> Task :catalog:compileTestJava NO-SOURCE
+> Task :catalog:testClasses UP-TO-DATE
+> Task :frame-lab:processTestResources NO-SOURCE
+> Task :frame-lab:testClasses UP-TO-DATE
+> Task :catalog:test UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugResources FROM-CACHE
+> Task :frame-lab:test FROM-CACHE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:javaPreCompileDebug FROM-CACHE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:packageDebugResources FROM-CACHE
+> Task :app:parseDebugLocalResources FROM-CACHE
+> Task :app:generateDebugRFile FROM-CACHE
+> Task :app:compressDebugAssets FROM-CACHE
+> Task :app:generateDebugGlobalSynthetics FROM-CACHE
+> Task :app:checkDebugDuplicateClasses
+> Task :app:desugarDebugFileDependencies FROM-CACHE
+> Task :app:mergeExtDexDebug FROM-CACHE
+> Task :app:mergeLibDexDebug FROM-CACHE
+> Task :app:checkDebugAarMetadata
+> Task :app:mapDebugSourceSetPaths
+> Task :app:compileDebugNavigationResources FROM-CACHE
+> Task :app:mergeDebugResources FROM-CACHE
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug FROM-CACHE
+> Task :app:processDebugMainManifest FROM-CACHE
+> Task :app:processDebugManifest FROM-CACHE
+> Task :app:processDebugManifestForPackage FROM-CACHE
+> Task :app:processDebugResources FROM-CACHE
+> Task :app:mergeDebugJniLibFolders
+> Task :app:mergeDebugNativeLibs
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:mergeReleaseNativeLibs
+
+> Task :app:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:extractReleaseNativeSymbolTables FROM-CACHE
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:generateReleaseResources FROM-CACHE
+> Task :app:packageReleaseResources FROM-CACHE
+> Task :app:processReleaseNavigationResources UP-TO-DATE
+> Task :app:parseReleaseLocalResources FROM-CACHE
+> Task :app:generateReleaseRFile FROM-CACHE
+> Task :app:compileDebugKotlin
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:processDebugJavaRes
+> Task :app:mergeDebugJavaResource
+> Task :app:compileReleaseKotlin
+> Task :app:javaPreCompileRelease FROM-CACHE
+> Task :app:compileReleaseJavaWithJavac NO-SOURCE
+> Task :app:mergeReleaseArtProfile
+> Task :app:checkReleaseAarMetadata
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:compileReleaseNavigationResources FROM-CACHE
+> Task :app:mergeReleaseResources FROM-CACHE
+> Task :app:dexBuilderDebug
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease FROM-CACHE
+> Task :app:processReleaseMainManifest FROM-CACHE
+> Task :app:processReleaseManifest FROM-CACHE
+> Task :app:processReleaseManifestForPackage FROM-CACHE
+> Task :app:processReleaseResources FROM-CACHE
+> Task :app:mergeProjectDexDebug
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseGeneratedProguardFiles UP-TO-DATE
+> Task :app:processReleaseJavaRes
+> Task :app:mergeReleaseJavaResource
+> Task :app:mergeReleaseStartupProfile UP-TO-DATE
+> Task :app:expandReleaseArtProfileWildcards
+> Task :app:produceReleaseComposeMapping
+> Task :app:reportReleaseComposeMappingErrors
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets FROM-CACHE
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:generateReleaseLintVitalReportModel
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:lintVitalReportRelease SKIPPED
+> Task :app:lintVitalRelease SKIPPED
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:generateDebugAndroidTestResources FROM-CACHE
+> Task :app:packageDebugAndroidTestResources FROM-CACHE
+> Task :app:processDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:parseDebugAndroidTestLocalResources FROM-CACHE
+> Task :app:generateDebugAndroidTestRFile FROM-CACHE
+
+> Task :app:compileDebugAndroidTestKotlin
+w: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/app/src/androidTest/kotlin/staff/android/rendering/CollectionTest.kt:12:27 'fun <reified A : ComponentActivity> createAndroidComposeRule(effectContext: CoroutineContext = ...): AndroidComposeTestRule<ActivityScenarioRule<A>, A>' is deprecated. Use `androidx.compose.ui.test.junit4.v2.createAndroidComposeRule` instead. The v2 APIs use StandardTestDispatcher instead of UnconfinedTestDispatcher, which aligns with standard coroutine behavior by queuing tasks rather than executing them immediately. Tests relying on immediate execution may require explicit synchronization. Please refer to the migration guide for more details.
+w: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/app/src/androidTest/kotlin/staff/android/rendering/ImageOwnershipTest.kt:23:27 'fun createComposeRule(effectContext: CoroutineContext = ...): ComposeContentTestRule' is deprecated. Use `androidx.compose.ui.test.junit4.v2.createComposeRule` instead. The v2 APIs use StandardTestDispatcher instead of UnconfinedTestDispatcher, which aligns with standard coroutine behavior by queuing tasks rather than executing them immediately. Tests relying on immediate execution may require explicit synchronization. Please refer to the migration guide for more details.
+
+> Task :app:javaPreCompileDebugAndroidTest FROM-CACHE
+> Task :app:compileDebugAndroidTestJavaWithJavac NO-SOURCE
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:compressDebugAndroidTestAssets FROM-CACHE
+> Task :app:generateDebugAndroidTestGlobalSynthetics FROM-CACHE
+> Task :app:processDebugAndroidTestJavaRes
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:checkDebugAndroidTestDuplicateClasses
+> Task :app:desugarDebugAndroidTestFileDependencies FROM-CACHE
+> Task :app:mergeExtDexDebugAndroidTest FROM-CACHE
+> Task :app:mergeLibDexDebugAndroidTest FROM-CACHE
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:mapDebugAndroidTestSourceSetPaths
+> Task :app:compileDebugAndroidTestNavigationResources FROM-CACHE
+> Task :app:mergeDebugAndroidTestResources FROM-CACHE
+> Task :app:mergeDebugAndroidTestManifest
+> Task :app:processDebugAndroidTestManifest
+> Task :app:processDebugAndroidTestResources FROM-CACHE
+> Task :app:dexBuilderDebugAndroidTest FROM-CACHE
+> Task :app:mergeProjectDexDebugAndroidTest FROM-CACHE
+> Task :app:mergeDebugAndroidTestJniLibFolders
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebugAndroidTest
+> Task :app:writeDebugAndroidTestSigningConfigVersions
+> Task :app:packageDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+> Task :app:assembleDebugAndroidTest
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:generateDebugLintReportModel
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:minifyReleaseWithR8
+> Task :app:mergeReleaseComposeMapping
+> Task :app:compileReleaseArtProfile
+> Task :app:convertShrunkResourcesToBinaryRelease
+> Task :app:optimizeReleaseResources
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:assembleRelease
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:generateReleaseLintReportModel
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/app/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/app/build/reports/lint-results-debug.sarif
+
+> Task :app:lintDebug
+> Task :benchmark:preBuild UP-TO-DATE
+> Task :benchmark:preBenchmarkBuild UP-TO-DATE
+> Task :benchmark:checkTestedAppObfuscationBenchmark UP-TO-DATE
+> Task :benchmark:generateBenchmarkResources FROM-CACHE
+> Task :benchmark:packageBenchmarkResources FROM-CACHE
+> Task :benchmark:processBenchmarkNavigationResources UP-TO-DATE
+> Task :benchmark:parseBenchmarkLocalResources FROM-CACHE
+> Task :benchmark:generateBenchmarkRFile FROM-CACHE
+> Task :benchmark:compileBenchmarkKotlin FROM-CACHE
+> Task :benchmark:javaPreCompileBenchmark FROM-CACHE
+> Task :benchmark:compileBenchmarkJavaWithJavac NO-SOURCE
+> Task :benchmark:generateBenchmarkAssets UP-TO-DATE
+> Task :benchmark:mergeBenchmarkAssets
+> Task :benchmark:compressBenchmarkAssets FROM-CACHE
+> Task :benchmark:generateBenchmarkGlobalSynthetics FROM-CACHE
+> Task :benchmark:processBenchmarkJavaRes
+> Task :benchmark:mergeBenchmarkJavaResource
+> Task :benchmark:checkBenchmarkDuplicateClasses
+> Task :benchmark:desugarBenchmarkFileDependencies FROM-CACHE
+> Task :benchmark:mergeExtDexBenchmark FROM-CACHE
+> Task :benchmark:mergeLibDexBenchmark FROM-CACHE
+> Task :benchmark:checkBenchmarkAarMetadata
+> Task :benchmark:mapBenchmarkSourceSetPaths
+> Task :benchmark:compileBenchmarkNavigationResources FROM-CACHE
+> Task :benchmark:mergeBenchmarkResources FROM-CACHE
+> Task :benchmark:mergeBenchmarkManifest
+> Task :benchmark:processBenchmarkManifest
+> Task :benchmark:processBenchmarkResources FROM-CACHE
+> Task :benchmark:dexBuilderBenchmark FROM-CACHE
+> Task :benchmark:mergeProjectDexBenchmark FROM-CACHE
+> Task :benchmark:mergeBenchmarkJniLibFolders
+> Task :benchmark:mergeBenchmarkNativeLibs
+
+> Task :benchmark:stripBenchmarkDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libbenchmarkNative.so, libtracing_perfetto.so. Run with --info option to learn more.
+
+> Task :benchmark:validateSigningBenchmark
+> Task :benchmark:writeBenchmarkSigningConfigVersions
+> Task :app:lintAnalyzeRelease
+
+> Task :app:lintReportRelease
+Wrote HTML report to file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/app/build/reports/lint-results-release.html
+Wrote SARIF report to file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/app/build/reports/lint-results-release.sarif
+
+> Task :app:lintRelease
+> Task :benchmark:packageBenchmark
+> Task :benchmark:assembleBenchmark
+> Task :benchmark:createBenchmarkApkListingFileRedirect
+
+[Incubating] Problems report is available at: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 34s
+168 actionable tasks: 91 executed, 63 from cache, 14 up-to-date
+Configuration cache entry stored.

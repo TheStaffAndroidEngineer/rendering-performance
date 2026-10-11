@@ -1,0 +1,81 @@
+Calculating task graph as no cached configuration is available for tasks: :frame-lab:test
+> Task :frame-lab:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :frame-lab:processResources NO-SOURCE
+> Task :frame-lab:processTestResources NO-SOURCE
+> Task :frame-lab:compileKotlin
+> Task :frame-lab:compileJava NO-SOURCE
+> Task :frame-lab:classes UP-TO-DATE
+> Task :frame-lab:jar
+> Task :frame-lab:compileTestKotlin
+> Task :frame-lab:compileTestJava NO-SOURCE
+> Task :frame-lab:testClasses UP-TO-DATE
+
+> Task :frame-lab:test FAILED
+
+FrameAccountingTest > earlyStartIsNotNegativeWaiting() PASSED
+
+FrameAccountingTest > longWorkAfterOnTimeStartCanMissDeadline() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:23
+
+FrameAccountingTest > invalidUnmatchedRowsAreStillRejected() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:68
+
+FrameAccountingTest > actualInputOrderDoesNotChangeMatching() PASSED
+
+FrameAccountingTest > duplicateKeysAreAmbiguousAndRejected() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:64
+
+FrameAccountingTest > signedSlackAndElapsedAreDifferentValues() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:12
+
+FrameAccountingTest > droppedBufferDoesNotInventPresentationOverrun() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:46
+
+FrameAccountingTest > zeroMatchedPresentationsHaveNoPercentage() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:60
+
+FrameAccountingTest > exactDeadlineIsOnTime() PASSED
+
+FrameAccountingTest > largeValidTimestampsDoNotOverflowByAddingADuration() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:79
+
+FrameAccountingTest > denominatorIncludesOnlyMatchedPresentedObservations() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:57
+
+FrameAccountingTest > unmatchedActualIsRetainedAfterExpectedOrder() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:51
+
+FrameAccountingTest > lateStartCanMissDeadlineDespiteShortWork() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:19
+
+FrameAccountingTest > missingEvidenceIsUnknownRatherThanFast() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:43
+
+FrameAccountingTest > changedDeadlineUsesEachExpectedRecord() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:29
+
+FrameAccountingTest > sameTokenOnDifferentSurfacesIsNotTheSameFrame() FAILED
+    org.opentest4j.AssertionFailedError at FrameAccountingTest.kt:34
+
+16 tests completed, 13 failed
+
+[Incubating] Problems report is available at: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':frame-lab:test'.
+> There were failing tests. See the report at: file:///Users/rkpattanaik/Projects/TheStaffAndroidEngineer/projects/rendering-performance/frame-lab/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 1s
+4 actionable tasks: 4 executed
+Configuration cache entry stored.
