@@ -5,7 +5,7 @@ import argparse,subprocess,os,json,hashlib,shutil,datetime
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--serial',default='emulator-5554');p.add_argument('--emulator-procedure',action='store_true');a=p.parse_args()
 a.out.mkdir(parents=True,exist_ok=False)
-adb=str(Path.home()/'Library/Android/sdk/platform-tools/adb');base=[adb,'-s',a.serial];commands=[]
+adb=str(Path(os.environ.get('ANDROID_HOME', str(Path.home() / 'Library/Android/sdk'))) / 'platform-tools/adb');base=[adb,'-s',a.serial];commands=[]
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 def run(args):
  start=datetime.datetime.now(datetime.timezone.utc).isoformat();r=subprocess.run(args,capture_output=True,text=True)
