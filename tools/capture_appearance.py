@@ -7,10 +7,12 @@ sys.path.insert(0,str(ROOT/'projects/commerce-app/tools'))
 from capture_checkpoint_appearance import CaptureSession, panes
 
 def main():
- p=argparse.ArgumentParser(); p.add_argument('--output',type=Path,required=True); p.add_argument('--serial',default='emulator-5554'); p.add_argument('--configs',default='light,dark,large,wide'); p.add_argument('--candidate',default='candidate2'); p.add_argument('--views-only',action='store_true'); a=p.parse_args(); configs=a.configs.split(','); assert all(c in ['light','dark','large','wide'] for c in configs)
+ p=argparse.ArgumentParser(); p.add_argument('--output',type=Path,required=True); p.add_argument('--serial',default='emulator-5554'); p.add_argument('--configs',default='light,dark,large,wide'); p.add_argument('--candidate', help='Optional retained author checkpoint; omit to use a fresh release build'); p.add_argument('--apk', type=Path, help='Explicit installable APK'); p.add_argument('--views-only',action='store_true'); a=p.parse_args(); configs=a.configs.split(','); assert all(c in ['light','dark','large','wide'] for c in configs)
  a.package='staff.android.rendering'; a.settle_timeout=45; a.max_scrolls=8
+ apk=(a.apk or (ROOT/'projects/rendering-performance/evidence'/a.candidate/'artifacts/app-release.apk' if a.candidate else ROOT/'projects/rendering-performance/app/build/outputs/apk/release/app-release.apk')).resolve()
+ if not apk.is_file(): p.error('APK does not exist; run ./gradlew :app:assembleRelease or supply --apk: '+str(apk))
  a.output.mkdir(parents=True,exist_ok=False)
- s=CaptureSession(a); apk=ROOT/'projects/rendering-performance/evidence'/a.candidate/'artifacts/app-release.apk'
+ s=CaptureSession(a)
  sha=lambda path:hashlib.sha256(path.read_bytes()).hexdigest()
  report={'status':'STARTING','package':a.package,'apkSha256':sha(apk),'rows':[], 'restorationErrors':[], 'scope':'API36 emulator pixels. Bounded top and scrolled collection viewports, Lab, empty state and Views comparison in light/dark/font-scale-2/wide. Not every product, all interaction states, or a physical performance/accessibility certification.'}
  report['viewsOnly']=a.views_only; report['candidate']=a.candidate
